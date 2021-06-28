@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>authorization</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-body">
+            <div class="card-body__header">
+                <h2 class="card-body__title mb-3">Чтобы продолжить работу</h2>
+                <h5 class="card-body__auth-text">авторизуйтесь</h5>
+            </div>
+            <div class="card-body__google">
+                <div class="logo-google">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.76205 15.7121L4.85705 19.0907L1.54926 19.1607C0.560717 17.3271 0 15.2293 0 13.0001C0 10.8444 0.524257 8.81151 1.45354 7.02155H1.45425L4.39911 7.56144L5.68913 10.4886C5.41913 11.2758 5.27197 12.1208 5.27197 13.0001C5.27207 13.9543 5.44493 14.8686 5.76205 15.7121Z"
+                            fill="#FBBB00" />
+                        <path
+                            d="M25.773 10.5716C25.9223 11.358 26.0001 12.1701 26.0001 13.0001C26.0001 13.9308 25.9023 14.8387 25.7159 15.7144C25.083 18.6943 23.4295 21.2964 21.1388 23.1379L21.1381 23.1371L17.4289 22.9479L16.9039 19.6707C18.4239 18.7793 19.6117 17.3843 20.2375 15.7144H13.2861V10.5716H20.3389H25.773Z"
+                            fill="#518EF8" />
+                        <path
+                            d="M21.1371 23.1368L21.1378 23.1375C18.91 24.9282 16.08 25.9996 12.9994 25.9996C8.04872 25.9996 3.74452 23.2325 1.54883 19.1604L5.76162 15.7119C6.85945 18.6419 9.68583 20.7276 12.9994 20.7276C14.4236 20.7276 15.7579 20.3426 16.9028 19.6704L21.1371 23.1368Z"
+                            fill="#28B446" />
+                        <path
+                            d="M21.2981 2.99281L17.0867 6.44061C15.9017 5.69993 14.501 5.27205 13.0004 5.27205C9.61182 5.27205 6.73257 7.45344 5.68975 10.4884L1.45481 7.02134H1.4541C3.61765 2.84996 7.97614 0 13.0004 0C16.1546 0 19.0467 1.12357 21.2981 2.99281Z"
+                            fill="#F14336" />
+                    </svg>
+                </div>
+                <h6 class="logo-google__title">Войти через Google</h6>
+
+            </div>
+            <h5 class="card-body__auth-text">или зарегистрируйтесь</h5>
+            <!-- form -->
+            <form class="form-signin">
+                <div class="form-label-group">
+                    <input type="email" id="inputEmail" class="form-control"
+                        placeholder="Email, на него придёт подтверждение" required autofocus>
+                </div>
+
+                <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control"
+                        placeholder="Придумайте пароль, мин. 6 символов" required>
+                </div>
+
+                <div class="custom-control custom-checkbox mb-4 mt-4">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Я соглашаюсь с условиями
+                        <a href="">Пользовательского соглашения</a></label>
+                </div>
+                <button class="btn btn-block" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "ArticulatCF";
+    src: url(../fonts/ArticulatCF-Bold.eot), url(../fonts/ArticulatCF-Bold.otf), url(../fonts/ArticulatCF-Bold.woff), url(../fonts/ArticulatCF-Bold.woff2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card-body {
+    max-width: 620px;
+    padding: 40px 0;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.card-body__header {
+    margin-bottom: 40px;
+}
+
+.card-body__google {
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 500px;
+        height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      
+      background-color: #f7f7f7;
+}
+
+.card-body__title {
+    font-family: "ArticulatCF";
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000b20;
+  }
+
+  .card-body__auth-text {
+    display: block;
+    font-family: ArticulatCF;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000b20;
+  }
+
+
+
+  .logo-google {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+  }
+
+  .logo-google__title {
+    display: block;
+    margin: 0;
+    font-family: ArticulatCF;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000b20;
+  }
+
+  .btn.btn-block {
+        margin: 0 auto;
+        width: 224px;
+        height: 51px;
+        flex-grow: 0;
+        padding: 15px 30px 17px;
+        border-radius: 40px;
+        background-color: #5448c8;
+        font-family: ArticulatCF;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+  }
+
+  .custom-control-label::after {
+    padding: 5px 4px;
+    border-radius: 6px;
+    background-color: #5448c8;
+}
+
+.form-signin {
+    margin: 0 auto;
+    width: 500px;
+    height: 64px;
+}
+.form-control {
+        padding: 30px 20px;
+        border-radius: 8px;
+        border: solid 1px #9faab3;
+}
+  
