@@ -4,6 +4,12 @@
     url(../fonts/ArticulatCF-Bold.woff), url(../fonts/ArticulatCF-Bold.woff2);
 }
 
+@font-face {
+  font-family: "ArticulatCF";
+  src: url(../fonts/ArticulatCF-Medium.eot), url(../fonts/ArticulatCF-Medium.otf),
+    url(../fonts/ArticulatCF-Medium.woff), url(../fonts/ArticulatCF-Medium.woff2);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -14,7 +20,6 @@
   max-width: 350px;
   max-height: 500px;
   border-radius: 5px;
-  background-color: #e7e7e7;
 }
 
 .card-body-auth__header {
@@ -26,19 +31,58 @@
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   background-color: #f7f7f7;
   border-radius: 5px;
 }
 
 .card-body-auth__input {
-  margin: 0 0 5px;
+  margin: 5px 0 5px;
+}
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label{
+  top: 6px;
+  bottom: 10px;
+  left: 20px;
+  font-family: "ArticulatCF";
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+  opacity: 1;
+}
+
+.inputText {
+
+  width: 200px;
+  height: 35px;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 12px;  font-family: "ArticulatCF";
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #9faab3;
+  transition: 0.2s ease all;
 }
 
 .card-body-auth__title {
   font-family: "ArticulatCF";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -50,8 +94,9 @@
 
 .card-body-auth__subtitle {
   display: block;
+  position: relative;
   font-family: "ArticulatCF";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -59,31 +104,65 @@
   letter-spacing: normal;
   text-align: center;
   color: #000b20;
-  margin: 10px 0;
+  margin: 20px 0;
+}
+
+.card-body-auth__subtitle-log {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.card-body-auth__subtitle.login {
+  text-align: center;
+  position: relative;
+}
+
+.card-body-auth__subtitle.login::after {
+  content:"";
+  display: block;
+  height: 1px;
+  background-color: #EEEFF2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+}
+
+.card-body-auth__subtitle-log {
+  background-color: #fff;
+  position: relative;
+z-index: 1;
+  display: inline-block;
+  padding: 0 20px;
 }
 
 .logo-google {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
 }
 
-.btn.btn-block {
+.btn.btn-block-auth {
   margin: 0 auto;
-  width: 200px;
-  height: 20px;
+  width: 44%;
+  height: 30px;
   flex-grow: 0;
   border-radius: 40px;
   background-color: #5448c8;
   font-family: "ArticulatCF";
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  text-align: left;
   color: #ffffff;
+}
+
+.btn.btn-block-auth:hover {
+  color: #e4e4e4;
 }
 
 .card-body-auth__form {
@@ -92,6 +171,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.form-check.auth {
+  font-size: 10px;
+} 
 
 .form-signin {
   margin: 0 auto;
@@ -114,6 +197,7 @@
 }
 
 .form-control-autheriz::placeholder {
+  display: block;
   font-family: "ArticulatCF";
   font-size: 11px;
   font-weight: 500;
@@ -123,41 +207,54 @@
   letter-spacing: normal;
   text-align: left;
   color: #9faab3;
+  padding-bottom: 5px;
+}
+
+.form-check-label {
+ font-size: 12px;
 }
 
 .card-body-auth__gen {
   display: block;
   margin: 0;
   position: absolute;
-  top: 43.5%;
+  top: 38%;
   left: 85%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   font-family: "ArticulatCF";
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
+  letter-spacing: 1px;
   text-align: right;
   color: #000b20;
+}
+
+.form-check-input.auth {
+  border-radius: 6px;
+  border: solid 2px #9faab3;
 }
 
 .card-body-auth__login {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1.2rem;
+  font-size: 12px;
 }
 
 .card-body-auth__labels {
-  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
   background-color: #f7f7f7;
+  margin: 20px 0;
 }
 
 .card-body-auth__about {
   text-align: center;
+  font-size: 14px;
 }
